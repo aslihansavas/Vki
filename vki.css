@@ -1,0 +1,95 @@
+body{
+	background-image:url('images/polygon-background3.jpg');
+	
+}
+
+#all{
+	border-radius:10px;
+	width: 800px;
+    padding: 10px;
+    background-color:white;
+    position: relative;
+    margin: auto;
+	border:1px solid gray;
+}
+#vki-nedir h2{ 
+background-image:url('images/soru-isareti.png');
+background-repeat: no-repeat;
+background-position: center left;
+text-align:left;
+padding-left:25px;
+color: #999;
+display: inline-block;
+font-size: 26px;
+font-weight: 700;
+}
+ #vki-nedir{
+	 
+float:left;
+ border-right:1px solid #e1e1e1;
+ position: relative;
+min-height: 1px;
+padding-left: 8px;
+padding-right: 8px;
+background-color: #fafafa;
+	
+}
+#vki-nasil{
+	background-color: #fafafa;
+	border-right:1px solid #e1e1e1;
+ position: relative;
+min-height: 1px;
+padding-left: 15px;
+padding-right: 15px;
+	float:right;
+border-right:1px solid #e1e1e1;
+
+
+}
+#vki-nasil h2{
+background-image:url('images/soru-isareti.png');
+background-repeat: no-repeat;
+background-position: center left;
+text-align: left;
+padding-left:25px;
+color: #999;
+display: inline-block;
+font-size: 26px;
+font-weight: 700;
+	
+}
+#vki{
+
+    height:209px;
+	padding:25px;
+	text-align:center;
+	clear:both;
+}
+#vki img{
+	float:right;
+}
+#vki-sonuc{
+	
+	padding:15px;
+	text-align:center;
+	clear:both;
+    background-color:#fafafa;
+}
+.button{
+	background-image:url('images/hesapla.png');
+    background-position: center;
+	width: 164px;
+    height: 54px;
+	border-radius:5px;
+	 
+}
+.rst{
+	background-image:url('images/reseticon.png');
+    background-position: center-left;
+    background-repeat: no-repeat;
+    background-color:white;
+	width: 164px;
+    height: 56px;
+	border-radius:5px;
+	 
+}

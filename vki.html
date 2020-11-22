@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+	
+	<head>
+	   <meta charset="UTF-8">
+       <title>Vücut Kitle İndeksi</title>
+	   <link rel = "stylesheet"
+             type = "text/css"
+             href = "vki.css" />
+		<script language="JavaScript" type="text/javascript">
+
+			function hesapla()
+			{
+				var kilo = document.KitleForm.kilo.value
+				var boy = document.KitleForm.boy.value
+				if(kilo > 0 && boy > 0)
+				{  
+					var sonuc = kilo/(boy/100*boy/100)
+					document.Kitlesonuc.endeks.value = sonuc
+					if(sonuc < 18.5)
+					{
+						document.Kitlesonuc.islemsonucu.value = "İdeal kilonun altındasınız."
+					}
+					if(sonuc > 18.5 && sonuc < 25)
+					{
+						document.Kitlesonuc.islemsonucu.value = "Gayet Sağlıklı."
+					}
+					if(sonuc >= 25)
+					{
+						document.Kitlesonuc.islemsonucu.value = "İdeal kilonun üzerindesiniz."
+					}
+			    }
+				else
+				{
+					alert("Böyle kilo,boy olmaz tekrar dene")
+				}
+			}
+
+		</script>
+	
+	</head>
+	<body>
+		<div id="all">
+			<div id="bnr">
+			  <img src="images/bnr.png">
+			</div>
+			<div id="vki-nedir">
+			  <h2>NEDİR</h2>
+			  <p>Vücut kitle indeksi, vücudunuzdaki tahmini yağ miktarını <br>gösteren bir değerdir.
+			  Bu değerin normalin üstünde olması <br>vücutta fazla miktarda yağ olduğu anlamına gelir.
+			  </p>
+			</div>
+			<div id="vki-nasil">
+				<h2>NASIL HESAPLANIR</h2>
+				<p>VKİ hesaplamasında boy-kilo oranı kullanılır. Dolayısıyla <br>VKİ değeri, boyunuza göre ideal
+				kilonuzun<br> kaç olması gerektiğini gösterir.
+				</p>
+			
+			</div>
+			<div id="vki">
+				<img src="images/tablo.png">
+				<form name="KitleForm">
+					Kilonuz (KG): <input type="text" name="kilo" size="20"><br><br>
+                    Boyunuz (CM): <input type="text" name="boy" size="20"><br><br>
+                    <input type="button" class="button" onClick="hesapla()"><br />
+				
+				</form>
+				
+			</div>
+			<div id ="vki-sonuc">
+				<form name="Kitlesonuc">
+					Vücut Kitle Endeksiniz: <input type="text" name="endeks" size="20"><br><br>
+                    Sonuca Göre: <input type="text" name="islemsonucu" size="25"><br><br>
+                    <input type="reset" class="rst" value="Temizle" />
+				</form>
+			</div>
+			<div id ="footer">
+			<img src="images/alt.png">
+			</div>
+		</div>
+
+	
+	</body>
+
+
+</html>
